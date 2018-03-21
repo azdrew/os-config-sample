@@ -1,0 +1,23 @@
+demo:
+  property: fromapp
+# management.context-path is a Spring Boot 1.x property, but is read by fabric8
+# (fixed but not yet released as of 3.5.58
+management:
+  context-path: /actuator
+  endpoints:
+    web:
+     exposure.include: health,info,env,configprops,mappings,,conditions,metrics
+  endpoint:
+    conditions.enabled: true
+    metrics.enabled: true
+    prometheus.enabled: true
+    env.enabled: true
+    mappings.enabled: true
+    health:
+      show-details: ALWAYS
+    metrics.web.server.auto-time-request: true
+logging:
+  level:
+    root: INFO
+
+ 

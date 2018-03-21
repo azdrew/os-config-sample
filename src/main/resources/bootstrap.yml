@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo
+  cloud.kubernetes:
+    config.enabled: true
+    secrets:
+      enabled: true
+      enableApi: true
+      name: demo
+

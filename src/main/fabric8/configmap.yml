@@ -1,0 +1,7 @@
+apiVersion: v1
+metadata:
+  name: demo
+data:
+  application.yml: |-
+    demo:
+      property: ConfigMap property
